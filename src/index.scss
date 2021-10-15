@@ -1,0 +1,32 @@
+@use './sass/index' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 72.5%;
+  box-sizing: border-box;
+
+  @include mq(large) {
+    font-size: 62.5%;
+  }
+
+  @include mq(small) {
+    font-size: 50%;
+  }
+}
+
+
+body {
+ font-family: $font-default;
+ color: #fff;
+ line-height: 1.6;
+ font-size: 1.6rem;
+ font-weight: 400;
+}
+

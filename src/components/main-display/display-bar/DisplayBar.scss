@@ -1,0 +1,69 @@
+@use '../../../sass/index' as *;
+.display-bar {
+
+    position: fixed;
+    bottom: 12vh;
+  
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &__temperature {
+      font-size: 8rem;
+      
+
+      & h3 {
+          font-weight: 500;
+      }
+    }
+
+    &__detail {
+       font-size: 4rem;
+       line-height: 1.5;
+       white-space: nowrap;
+
+       & h3 {
+           font-weight: 500;
+       }
+
+       & span {
+           font-size: 3.2rem;
+       }
+    }
+
+    &__date {
+        font-size: 1.6rem;
+        font-weight: 300;
+    
+    }
+
+    &__weather {
+
+        & > *:first-child {
+            font-size: 7.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -1.5rem;
+        }
+
+        & h3 {
+            
+            &::first-letter {
+                text-transform: uppercase;
+            }
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    @include mq(small) {
+        flex-direction: column;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

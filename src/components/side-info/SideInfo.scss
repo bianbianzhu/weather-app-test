@@ -1,0 +1,22 @@
+@use '../../sass/index' as *;
+.side-info {
+
+    width: 33vw;
+
+    min-width: 30rem;
+    
+    background-color: $color-glassy;
+    backdrop-filter: blur(1.5rem);
+
+    transform-origin: right;
+
+    animation: slideFromRight .5s ease-in-out;
+
+    transition: .1s;
+
+   
+   @include mq(small) {
+       transform: translateX(100%);
+   }
+
+}

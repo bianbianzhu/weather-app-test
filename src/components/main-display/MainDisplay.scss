@@ -1,0 +1,9 @@
+@use '../../sass/index' as *;
+.main-display {
+    flex: 1;
+    padding: 5rem 8rem;
+
+    @include mq(small) {
+        width: 100%;
+    }
+}

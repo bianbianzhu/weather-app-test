@@ -1,0 +1,39 @@
+@use './sass/index' as *;
+.App {
+  min-height: 100vh;
+
+  background-image: url(./assets/cloudy.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, transparent, rgba(#000, 0.5));
+  }
+}
+
+.App-warm {
+  background-image: url(./assets/hot.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+main {
+  min-height: inherit;
+  display: flex;
+  justify-content: space-between;
+  
+
+  @include mq (small) {
+    
+  
+  }
+
+}

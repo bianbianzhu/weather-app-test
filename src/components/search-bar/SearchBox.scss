@@ -1,0 +1,66 @@
+@use '../../sass/index' as *;
+.search-box {
+  width: 33vw;
+
+  max-width: 500rem;
+
+  padding-left: 5rem;
+
+  display: flex;
+  gap: 5rem;
+
+  &__input {
+    flex: 1;
+
+    align-self: flex-end;
+
+    font: inherit;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: none;
+    appearance: none;
+    padding: 1rem 0;
+    border-bottom: 0.1rem solid $color-font-light;
+
+    &::placeholder {
+      color: $color-font-light;
+    }
+
+    &:active,
+    &:focus {
+      background-color: rgba(#fff, 0.3);
+    }
+  }
+
+  &__btn {
+    background-color: $color-btn-primary;
+    border: none;
+    width: 10rem;
+    height: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.25s;
+
+    & > * {
+      font-size: 2.6rem;
+      transition: 0.1s;
+    }
+
+    &:hover {
+      box-shadow: 0 0.5rem 1.5rem rgba(#000, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 0.2rem 0.5rem rgba(#000, 0.15);
+    }
+
+    &:active > * {
+      color: rgba(#fff, 0.25);
+    }
+  }
+}
