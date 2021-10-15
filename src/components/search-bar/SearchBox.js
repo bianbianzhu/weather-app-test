@@ -7,6 +7,7 @@ const SearchBox = (props) => {
 
   const [inputQuery, setInputQuery] = useState('melbourne');
 
+  /////////////////////////
 
   const inputChangeHandler = (e) => {
     setInputQuery(e.target.value);
